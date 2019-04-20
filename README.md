@@ -2,7 +2,11 @@
 ---
 ### Exercício de webscraping com o site [Guiamais](https://www.guiamais.com.br).
 > Retorna CEP,DDD ou  DDI 
-
+### Requerimentos:
+   * lynx
+   * html-xml-utils
+   * python
+   * curl
 ### instalação: 
 ```shell
 $chmod +x pcep.sh
@@ -20,3 +24,6 @@ $./pcep.sh -cep "Montes Claros, MG"
    [11]Avenida A
    [12]Raul Lourenço [13]Montes Claros, MG [14]Raul Lourenço, Montes
    Claros, MG [15]39404-700
+```
+
+
