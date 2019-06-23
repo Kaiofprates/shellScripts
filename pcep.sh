@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Ainda contêm alguns erros no scraping da página, algumas coisas merecem ser filtradas! 
+
 case $1 in
   -cep|-C)
 echo $2 | python -c 'import sys,urllib;print urllib.quote(sys.stdin.read().strip())' > temp
