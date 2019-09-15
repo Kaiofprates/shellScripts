@@ -10,11 +10,11 @@ curl -s https://cep.guiamais.com.br/busca?word=$busca |hxnormalize -x |hxselect 
 ;;
 -ddi|-i)
 
-curl -s https://ddi.guiamais.com.br/busca?word=$2 |hxnormalize -x |hxselect ".col-md-8"  | lynx -stdin -dump | grep -v --invert-match "file"
+curl -s https://ddi.guiamais.com.br/busca?word=$2 |hxnormalize -x |hxselect ".col-md-8"  | lynx -stdin -dump | grep -v --invert-match "file" | grep -A 2 -i "ddi"
 ;;
 -ddd|-D)
 
-curl -s https://ddd.guiamais.com.br/busca?word=$2 |hxnormalize -x |hxselect ".col-md-8"  | lynx -stdin -dump | grep -v --invert-match "file"
+curl -s https://ddd.guiamais.com.br/busca?word=$2 |hxnormalize -x |hxselect ".col-md-8"  | lynx -stdin -dump | grep -v --invert-match "file" |grep -A 2 -i "ddd"
 ;;
 
    -h|--help)
