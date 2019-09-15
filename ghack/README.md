@@ -4,7 +4,7 @@
 Biblioteca python [googlesearch](https://github.com/MarioVilas/googlesearch)
 ### uso
 ``` bash
-$./ghack ["livro/artigo"] [formato]
+$./ghack.sh ["livro/artigo"] [formato]
 ex:
-$./ghack "crônicas de narnia" pdf
+$./ghack.sh "crônicas de narnia" pdf
 ```
